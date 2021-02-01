@@ -24,7 +24,7 @@ public class CustomerController {
 
     //-------------------Retrieve All Customers--------------------------------------------------------
 
-    @RequestMapping(value = "/customer", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/", method = RequestMethod.GET)
     public ResponseEntity<List<Customer>> listAllCustomers() {
         List<Customer> customers = customerService.findAll();
         if (customers.isEmpty()) {
